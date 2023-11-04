@@ -24,4 +24,59 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+#text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#text:first-of-type {
+  animation: showup 7s infinite;
+}
+
+#text:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 185px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 185px;
+  }
 }
