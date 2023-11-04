@@ -104,13 +104,13 @@ export default function Home() {
       {/* <div className="absolute bg-[#051d20] z-10 w-full h-full opacity-90"></div> */}
       <img
         src="logo.png"
-        className="absolute top-8 sm:top-[80px] h-[60px] sm:h-[120px]"
+        className="absolute top-8 sm:top-[80px] h-[60px] sm:h-[80px] lg:h-[120px]"
       />
 
       <div className="flex flex-col text-black text-3xl hover:text-[36px] sm:text-7xl sm:hover:text-[84px] transition-all duration-500 items-center justify-center font-bold z-20">
         <span className="text-[#aaf082] ">Ардкойн 3.0</span>
         <div className="effect-text-container">
-          <span className="text-xs   sm:text-xl font-normal rounded-md sm:rounded-lg border-[#223e42] border-[1px] px-2 sm:px-3 py-[3px] sm:py-2">
+          <span className="text-xs   sm:text-xl font-normal rounded-[4px] sm:rounded-lg border-[#223e42] border-[1px] px-2 sm:px-3 py-[3px] sm:py-2">
             Тун удахгүй
           </span>
         </div>
