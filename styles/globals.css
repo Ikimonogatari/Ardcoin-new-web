@@ -45,6 +45,11 @@ body {
   animation: reveal 7s infinite;
 }
 
+#text:last-of-type span {
+  margin-left: 0px;
+  animation: slidein 7s infinite;
+}
+
 @keyframes showup {
   0% {
     opacity: 0;
@@ -78,5 +83,27 @@ body {
   100% {
     opacity: 0;
     width: 185px;
+  }
+}
+@media (max-width: 639px) {
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      width: 0px;
+    }
+    20% {
+      opacity: 1;
+      width: 0px;
+    }
+    30% {
+      width: 125px;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      width: 125px;
+    }
   }
 }
