@@ -107,3 +107,17 @@ body {
     }
   }
 }
+@keyframes descend {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+}
+
+.animate-descend {
+  animation: descend 1s ease-in-out;
+}
