@@ -96,14 +96,14 @@ body {
       width: 0px;
     }
     30% {
-      width: 125px;
+      width: 135px;
     }
     80% {
       opacity: 1;
     }
     100% {
       opacity: 0;
-      width: 125px;
+      width: 135px;
     }
   }
 }
