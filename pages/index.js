@@ -31,32 +31,33 @@ export default function Home() {
       "Y",
       "Z",
     ];
-    let currentText = document.querySelector(
-      ".effect-text-container span"
-    ).textContent;
-    let currentTextCollection = [];
+
+    const initialText = "Coming soon...";
+    let currentText = initialText;
     let characterCount = 0;
     const characterSpeed = 100;
+    const resetInterval = 5000; // Adjust this value to change the interval for resetting the text
 
-    pushCurrentTextCharacters();
-
-    function pushCurrentTextCharacters() {
-      for (let i = 0; i < currentText.length; i++) {
-        let currentCharacter = currentText.slice(i, i + 1);
-        currentTextCollection.push(currentCharacter);
-      }
-    }
-
-    const characterCountIncreaseInterval = setInterval(
+    let characterCountIncreaseInterval = setInterval(
       characterCountIncrease,
       characterSpeed
     );
 
     function characterCountIncrease() {
-      if (characterCount === currentTextCollection.length) {
+      if (characterCount === currentText.length) {
         clearInterval(characterCountIncreaseInterval);
+        setTimeout(resetText, resetInterval);
       }
       characterCount++;
+    }
+
+    function resetText() {
+      currentText = initialText;
+      characterCount = 0;
+      characterCountIncreaseInterval = setInterval(
+        characterCountIncrease,
+        characterSpeed
+      );
     }
 
     const setRandomTextInterval = setInterval(setRandomText, 50);
@@ -65,7 +66,7 @@ export default function Home() {
       let result = "";
 
       if (characterCount === 0) {
-        for (let i = 0; i < currentTextCollection.length; i++) {
+        for (let i = 0; i < initialText.length; i++) {
           let randomCharacter =
             characterCollection[
               Math.floor(Math.random() * characterCollection.length)
@@ -75,11 +76,7 @@ export default function Home() {
       } else {
         result = currentText.slice(0, characterCount);
 
-        for (
-          let i = 0;
-          i < currentTextCollection.length - characterCount;
-          i++
-        ) {
+        for (let i = 0; i < initialText.length - characterCount; i++) {
           let randomCharacter =
             characterCollection[
               Math.floor(Math.random() * characterCollection.length)
@@ -97,6 +94,11 @@ export default function Home() {
         el.textContent = getRandomText();
       });
     }
+
+    return () => {
+      clearInterval(characterCountIncreaseInterval);
+      clearInterval(setRandomTextInterval);
+    };
   }, []);
   return (
     <main className="w-full h-screen relative flex justify-center items-center overflow-hidden">
