@@ -124,8 +124,7 @@ export default function Home() {
         className="absolute bottom-0 w-full z-50 opacity-70 h-1/6 mx-auto block md:hidden object-cover transition-opacity duration-1000 ease-in-out"
       />
 
-      <div className="flex flex-col text-black text-3xl hover:text-[36px] sm:text-7xl sm:hover:text-[84px] transition-all duration-500 items-center justify-center font-bold z-20">
-        {/* <span className="text-white">Шинэчлэгдсэн</span> */}
+      <div className="flex flex-col text-black text-3xl hover:text-[36px] sm:text-7xl sm:hover:text-[80px] transition-all duration-500 items-center justify-center font-bold z-20">
         <span className="text-[#aaf082] ">Ardcoin 3.0</span>
         <div className="flex items-center text-center text-white mt-3 sm:mt-5 text-base sm:text-2xl font-normal">
           <div id="text" className="mr-2">
@@ -135,7 +134,7 @@ export default function Home() {
             <span>to Decentralized</span>
           </div>
         </div>
-        <div className="effect-text-container">
+        <div className="-bottom-20 effect-text-container">
           <span className="text-xs sm:text-2xl font-normal rounded-[4px] sm:rounded-lg border-white/10 bg-[#09282d] text-white border-[1px] px-3 sm:px-4 py-2 sm:py-3">
             Coming soon...
           </span>
