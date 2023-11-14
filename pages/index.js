@@ -114,7 +114,11 @@ export default function Home() {
       />
       <img
         src="gradbg.png"
-        className="absolute bottom-0 w-full z-50 opacity-60 h-1/6 mx-auto"
+        className="absolute bottom-0 w-full z-50 opacity-60 h-1/6 mx-auto hidden md:block"
+      />
+      <img
+        src="gradbgmobile.png"
+        className="absolute bottom-0 w-full z-50 opacity-60 h-1/6 mx-auto block md:hidden"
       />
 
       <div className="flex flex-col text-black text-3xl hover:text-[36px] sm:text-7xl sm:hover:text-[84px] transition-all duration-500 items-center justify-center font-bold z-20">
