@@ -116,12 +116,12 @@ export default function Home() {
       <img
         src="gradbg-min.png"
         loading="lazy"
-        className="absolute bottom-0 w-full z-50 opacity-60 h-1/6 mx-auto hidden md:block"
+        className="absolute bottom-0 w-full z-50 opacity-60 h-1/6 mx-auto hidden md:block object-cover transition-opacity duration-1000 ease-in-out"
       />
       <img
         src="gradbgmobile-min.png"
         loading="lazy"
-        className="absolute bottom-0 w-full z-50 opacity-60 h-1/6 mx-auto block md:hidden"
+        className="absolute bottom-0 w-full z-50 opacity-60 h-1/6 mx-auto block md:hidden object-cover transition-opacity duration-1000 ease-in-out"
       />
 
       <div className="flex flex-col text-black text-3xl hover:text-[36px] sm:text-7xl sm:hover:text-[84px] transition-all duration-500 items-center justify-center font-bold z-20">
