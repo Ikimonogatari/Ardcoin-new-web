@@ -110,14 +110,17 @@ export default function Home() {
       <div className="absolute bg-[#051d20] z-10 w-full h-full opacity-90"></div>
       <img
         src="logowhite.png"
+        loading="lazy"
         className="absolute top-8 sm:top-[80px] h-[30px] sm:h-[50px] lg:h-[60px] z-50"
       />
       <img
-        src="gradbg.png"
+        src="gradbg-min.png"
+        loading="lazy"
         className="absolute bottom-0 w-full z-50 opacity-60 h-1/6 mx-auto hidden md:block"
       />
       <img
-        src="gradbgmobile.png"
+        src="gradbgmobile-min.png"
+        loading="lazy"
         className="absolute bottom-0 w-full z-50 opacity-60 h-1/6 mx-auto block md:hidden"
       />
 
@@ -125,7 +128,7 @@ export default function Home() {
         {/* <span className="text-white">Шинэчлэгдсэн</span> */}
         <span className="text-[#aaf082] ">Ardcoin 3.0</span>
         <div className="flex items-center text-center text-white mt-3 sm:mt-5 text-base sm:text-2xl font-normal">
-          <div id="text" className="">
+          <div id="text" className="mr-2">
             Centralized
           </div>
           <div id="text">

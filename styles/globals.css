@@ -75,14 +75,14 @@ body {
     width: 0px;
   }
   30% {
-    width: 200px;
+    width: 189px;
   }
   80% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    width: 200px;
+    width: 189px;
   }
 }
 @media (max-width: 639px) {
@@ -96,14 +96,14 @@ body {
       width: 0px;
     }
     30% {
-      width: 135px;
+      width: 125px;
     }
     80% {
       opacity: 1;
     }
     100% {
       opacity: 0;
-      width: 135px;
+      width: 125px;
     }
   }
 }
