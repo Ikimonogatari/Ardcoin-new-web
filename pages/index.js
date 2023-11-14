@@ -110,7 +110,11 @@ export default function Home() {
       <div className="absolute bg-[#051d20] z-10 w-full h-full opacity-90"></div>
       <img
         src="logowhite.png"
-        className="absolute top-8 sm:top-[80px] h-[40px] sm:h-[60px] lg:h-[70px] z-50"
+        className="absolute top-8 sm:top-[80px] h-[30px] sm:h-[50px] lg:h-[60px] z-50"
+      />
+      <img
+        src="gradbg.png"
+        className="absolute bottom-0 w-full z-50 opacity-50 h-1/6 mx-auto"
       />
 
       <div className="flex flex-col text-black text-3xl hover:text-[36px] sm:text-7xl sm:hover:text-[84px] transition-all duration-500 items-center justify-center font-bold z-20">
