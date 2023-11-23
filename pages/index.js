@@ -1,6 +1,36 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+function calculateTime() {
+  const year = new Date().getFullYear(),
+    difference = +new Date(`${year}-12-1`) - +new Date();
+  let timeLeft = [];
+
+  if (difference > 0) {
+    timeLeft["days"] = Math.floor(difference / (1000 * 60 * 60 * 24));
+    timeLeft["hours"] = Math.floor((difference / (1000 * 60 * 60)) % 24);
+    timeLeft["minutes"] = Math.floor((difference / 1000 / 60) % 60);
+    timeLeft["seconds"] = Math.floor((difference / 1000) % 60);
+  }
+
+  return timeLeft;
+}
 
 export default function Home() {
+  const [timeLeft, setTimeLeft] = useState(calculateTime());
+  useEffect(() => {
+    const id = setTimeout(() => {
+      setTimeLeft(calculateTime());
+    }, 1000);
+    return () => clearTimeout(id);
+  });
+
+  const timerComponents = Object.keys(timeLeft).map((interval) => {
+    if (!timeLeft[interval]) {
+      return null;
+    }
+
+    return true;
+  });
   useEffect(() => {
     const characterCollection = [
       "A",
@@ -123,7 +153,38 @@ export default function Home() {
         loading="lazy"
         className="absolute bottom-0 w-full z-50 opacity-70 h-1/6 mx-auto block md:hidden object-cover transition-opacity duration-1000 ease-in-out"
       />
-
+      <div className="absolute z-50 bottom-1/3 sm:bottom-1/4">
+        {timerComponents.length ? (
+          <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div className="flex flex-col text-xs sm:text-base">
+              <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
+                <span style={{ "--value": timeLeft["days"] }}></span>
+              </span>
+              days
+            </div>
+            <div className="flex flex-col text-xs sm:text-base">
+              <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
+                <span style={{ "--value": timeLeft["hours"] }}></span>
+              </span>
+              hours
+            </div>
+            <div className="flex flex-col text-xs sm:text-base">
+              <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
+                <span style={{ "--value": timeLeft["minutes"] }}></span>
+              </span>
+              min
+            </div>
+            <div className="flex flex-col text-xs sm:text-base">
+              <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
+                <span style={{ "--value": timeLeft["seconds"] }}></span>
+              </span>
+              sec
+            </div>
+          </div>
+        ) : (
+          <></>
+        )}
+      </div>
       <div className="flex flex-col text-black text-3xl hover:text-[36px] sm:text-7xl sm:hover:text-[80px] transition-all duration-500 items-center justify-center font-bold z-20">
         <span className="text-[#aaf082] ">Ardcoin 3.0</span>
         <div className="flex items-center text-center text-white mt-3 sm:mt-5 text-base sm:text-2xl font-normal">
