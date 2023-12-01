@@ -131,7 +131,7 @@ export default function Home() {
             src="https://www.youtube.com/embed/8GsVa3aBmiE?rel=0&autoplay=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="mx-auto w-screen h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
+            className="mx-auto w-[354px] h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
           ></iframe>
         </div>
         {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
