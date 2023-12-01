@@ -123,10 +123,22 @@ export default function Home() {
         loading="lazy"
         className="absolute bottom-0 w-full z-50 opacity-70 h-1/6 mx-auto block md:hidden object-cover transition-opacity duration-1000 ease-in-out"
       />
-
-      <div className="flex flex-col text-black text-3xl hover:text-[36px] sm:text-7xl sm:hover:text-[80px] transition-all duration-500 items-center justify-center font-bold z-20">
-        <span className="text-[#aaf082] ">Ardcoin 3.0</span>
-        <div className="flex items-center text-center text-white mt-3 sm:mt-5 text-base sm:text-2xl font-normal">
+      {/*sm:hover:text-[80px] hover:text-[36px]*/}
+      <div className="flex flex-col text-3xl sm:text-7xl transition-all duration-500 items-center justify-center font-bold z-20">
+        <div className="mt-10">
+          <iframe
+            width="100%"
+            // height="400"
+            src="https://www.youtube.com/embed/8GsVa3aBmiE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            className="mx-auto w-screen h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
+          ></iframe>
+        </div>
+        {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
+        <div className="flex items-center text-center text-white mt-3 sm:mt-10 text-base sm:text-2xl font-normal">
           <div id="text" className="mr-2">
             Centralized
           </div>
