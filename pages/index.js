@@ -128,12 +128,9 @@ export default function Home() {
         <div className="mt-10">
           <iframe
             width="100%"
-            // height="400"
-            src="https://www.youtube.com/embed/8GsVa3aBmiE"
-            title="YouTube video player"
-            frameborder="0"
+            src="https://www.youtube.com/embed/8GsVa3aBmiE?rel=0&autoplay=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
             className="mx-auto w-screen h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
           ></iframe>
         </div>
