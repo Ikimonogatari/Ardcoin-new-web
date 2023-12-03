@@ -187,7 +187,7 @@ export default function Home() {
           <></>
         )}
         {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
-        <div className="mt-10">
+        <div className="mt-5">
           <iframe
             width="100%"
             src="https://www.youtube.com/embed/8GsVa3aBmiE?rel=0&autoplay=1"
