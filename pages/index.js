@@ -157,7 +157,7 @@ export default function Home() {
       {/* sm:hover:text-[80px] hover:text-[36px] */}
       <div className="flex flex-col text-3xl sm:text-7xl  transition-all duration-500 items-center justify-center font-bold z-20">
         {timerComponents.length ? (
-          <div className="font-normal grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div className="font-normal grid grid-flow-col gap-4 text-center auto-cols-max">
             <div className="flex flex-col text-xs sm:text-base">
               <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
                 <span style={{ "--value": timeLeft["days"] }}></span>
@@ -204,7 +204,7 @@ export default function Home() {
             <span>to Decentralized</span>
           </div>
         </div>
-        <div className="-bottom-20 effect-text-container mt-2 sm:mt-0">
+        <div className="-bottom-20 effect-text-container mt-2 sm:-mt-1">
           <span className="text-xs sm:text-2xl font-normal rounded-[4px] sm:rounded-lg border-white/10 bg-[#09282d] text-white border-[1px] px-2 sm:px-4 py-[6px] sm:py-3">
             Coming soon...
           </span>
