@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function calculateTime() {
   const year = new Date().getFullYear(),
-    difference = +new Date(`${year}-12-1`) - +new Date();
+    difference = +new Date(`${year}-12-15`) - +new Date();
   let timeLeft = [];
 
   if (difference > 0) {
@@ -153,9 +153,11 @@ export default function Home() {
         loading="lazy"
         className="absolute bottom-0 w-full z-50 opacity-70 h-1/6 mx-auto block md:hidden object-cover transition-opacity duration-1000 ease-in-out"
       />
-      <div className="absolute z-50 bottom-1/3 sm:bottom-1/4">
+      {/* <div className="absolute z-50 bottom-1/2 sm:bottom-24"></div> */}
+      {/* sm:hover:text-[80px] hover:text-[36px] */}
+      <div className="flex flex-col text-3xl sm:text-7xl  transition-all duration-500 items-center justify-center font-bold z-20">
         {timerComponents.length ? (
-          <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div className="font-normal grid grid-flow-col gap-5 text-center auto-cols-max">
             <div className="flex flex-col text-xs sm:text-base">
               <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
                 <span style={{ "--value": timeLeft["days"] }}></span>
@@ -184,9 +186,16 @@ export default function Home() {
         ) : (
           <></>
         )}
-      </div>
-      <div className="flex flex-col text-black text-3xl hover:text-[36px] sm:text-7xl sm:hover:text-[80px] transition-all duration-500 items-center justify-center font-bold z-20">
-        <span className="text-[#aaf082] ">Ardcoin 3.0</span>
+        {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
+        <div className="mt-10">
+          <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/8GsVa3aBmiE?rel=0&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="mx-auto w-[354px] h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
+          ></iframe>
+        </div>
         <div className="flex items-center text-center text-white mt-3 sm:mt-5 text-base sm:text-2xl font-normal">
           <div id="text" className="mr-2">
             Centralized
