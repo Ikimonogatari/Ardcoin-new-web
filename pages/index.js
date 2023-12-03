@@ -180,7 +180,7 @@ export default function Home() {
           </span>
         </div>
         {timerComponents.length ? (
-          <div className="mt-3 sm:mt-8 font-normal grid grid-flow-col gap-4 text-center auto-cols-max">
+          <div className="mt-3 sm:mt-8 font-normal grid grid-flow-col gap-2 sm:gap-4 text-center auto-cols-max">
             <div className="flex flex-col text-xs sm:text-base">
               <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
                 <span style={{ "--value": timeLeft["days"] }}></span>
