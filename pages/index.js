@@ -155,9 +155,32 @@ export default function Home() {
       />
       {/* <div className="absolute z-50 bottom-1/2 sm:bottom-24"></div> */}
       {/* sm:hover:text-[80px] hover:text-[36px] */}
-      <div className="flex flex-col text-3xl sm:text-7xl  transition-all duration-500 items-center justify-center font-bold z-20">
+      <div className="flex flex-col text-3xl sm:text-7xl transition-all duration-500 items-center justify-center font-bold z-20">
+        {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
+        <div className="mt-5">
+          <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/8GsVa3aBmiE?rel=0&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="mx-auto w-[354px] h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
+          ></iframe>
+        </div>
+        <div className="flex items-center text-center text-white mt-3 sm:mt-6 text-base sm:text-2xl font-normal">
+          <div id="text" className="mr-2">
+            Centralized
+          </div>
+          <div id="text">
+            <span>to Decentralized</span>
+          </div>
+        </div>
+        <div className="effect-text-container">
+          <span className="text-xs sm:text-2xl font-normal rounded-[4px] sm:rounded-lg border-white/10 bg-[#09282d] text-white border-[1px] px-2 sm:px-4 py-[6px] sm:py-3">
+            Coming soon...
+          </span>
+        </div>
         {timerComponents.length ? (
-          <div className="font-normal grid grid-flow-col gap-4 text-center auto-cols-max">
+          <div className="mt-3 sm:mt-8 font-normal grid grid-flow-col gap-4 text-center auto-cols-max">
             <div className="flex flex-col text-xs sm:text-base">
               <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
                 <span style={{ "--value": timeLeft["days"] }}></span>
@@ -186,29 +209,6 @@ export default function Home() {
         ) : (
           <></>
         )}
-        {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
-        <div className="mt-5">
-          <iframe
-            width="100%"
-            src="https://www.youtube.com/embed/8GsVa3aBmiE?rel=0&autoplay=1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="mx-auto w-[354px] h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
-          ></iframe>
-        </div>
-        <div className="flex items-center text-center text-white mt-3 sm:mt-5 text-base sm:text-2xl font-normal">
-          <div id="text" className="mr-2">
-            Centralized
-          </div>
-          <div id="text">
-            <span>to Decentralized</span>
-          </div>
-        </div>
-        <div className="-bottom-20 effect-text-container mt-2 sm:-mt-1">
-          <span className="text-xs sm:text-2xl font-normal rounded-[4px] sm:rounded-lg border-white/10 bg-[#09282d] text-white border-[1px] px-2 sm:px-4 py-[6px] sm:py-3">
-            Coming soon...
-          </span>
-        </div>
       </div>
     </main>
   );
