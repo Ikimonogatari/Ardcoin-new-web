@@ -153,9 +153,7 @@ export default function Home() {
         loading="lazy"
         className="absolute bottom-0 w-full z-50 opacity-70 h-1/6 mx-auto block md:hidden object-cover transition-opacity duration-1000 ease-in-out"
       />
-      {/* <div className="absolute z-50 bottom-1/2 sm:bottom-24"></div> */}
-      {/* sm:hover:text-[80px] hover:text-[36px] */}
-      <div className="flex flex-col transition-all duration-500 items-center justify-center font-bold z-20 max-w-6 container">
+      <div className="flex flex-col transition-all duration-500 items-center justify-center font-bold z-20 max-w-6xl max-h-[700px] container overflow-hidden">
         {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
 
         <img
@@ -165,7 +163,7 @@ export default function Home() {
           className="absolute top-8 z-50 sm:static h-[30px] sm:h-[50px] lg:h-[60px]"
         />
 
-        <div className="mt-14">
+        <div className="mt-10">
           <iframe
             width="100%"
             src="https://www.youtube.com/embed/8GsVa3aBmiE?rel=0&autoplay=1"
