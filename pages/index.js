@@ -171,31 +171,31 @@ export default function Home() {
             src="https://www.youtube.com/embed/8GsVa3aBmiE?rel=0&autoplay=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="rounded-2xl sm:rounded-3xl mx-auto w-[354px] h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
+            className="rounded-2xl sm:rounded-3xl mx-auto w-[354px] h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[619.5px] lg:h-[350px]"
           ></iframe>
         </div>
         {timerComponents.length ? (
           <div className="mt-3 sm:mt-8 text-white font-normal grid grid-flow-col gap-2 sm:gap-4 text-center auto-cols-max rounded-[4px] sm:rounded-lg border-white/10 bg-[#09282d] border-[1px] px-2 sm:px-2 py-[6px] sm:py-2">
             <div className="flex flex-col text-xs sm:text-base">
-              <span className="countdown text-3xl sm:text-4xl lg:text-5xl">
+              <span className="countdown text-2xl sm:text-3xl lg:text-4xl">
                 <span style={{ "--value": timeLeft["days"] }}></span>
               </span>
               days
             </div>
             <div className="flex flex-col text-xs sm:text-base">
-              <span className="countdown text-3xl sm:text-4xl lg:text-5xl">
+              <span className="countdown text-2xl sm:text-3xl lg:text-4xl">
                 <span style={{ "--value": timeLeft["hours"] }}></span>
               </span>
               hours
             </div>
             <div className="flex flex-col text-xs sm:text-base">
-              <span className="countdown text-3xl sm:text-4xl lg:text-5xl">
+              <span className="countdown text-2xl sm:text-3xl lg:text-4xl">
                 <span style={{ "--value": timeLeft["minutes"] }}></span>
               </span>
               min
             </div>
             <div className="flex flex-col text-xs sm:text-base">
-              <span className="countdown text-3xl sm:text-4xl lg:text-5xl">
+              <span className="countdown text-2xl sm:text-3xl lg:text-4xl">
                 <span style={{ "--value": timeLeft["seconds"] }}></span>
               </span>
               sec
@@ -204,7 +204,7 @@ export default function Home() {
         ) : (
           <></>
         )}
-        <div className="flex items-center text-center text-white mt-3 sm:mt-6 text-base sm:text-2xl font-normal">
+        <div className="flex items-center text-center text-white mt-3 sm:mt-6 text-base sm:text-xl font-normal">
           <div id="text" className="mr-2">
             Centralized
           </div>
@@ -213,7 +213,7 @@ export default function Home() {
           </div>
         </div>
         <div className="effect-text-container">
-          <span className="text-xs sm:text-2xl font-normal rounded-[4px] sm:rounded-lg border-white/10 bg-[#09282d] text-white border-[1px] px-2 sm:px-4 py-[6px] sm:py-3">
+          <span className="text-xs sm:text-xl font-normal rounded-[4px] sm:rounded-lg border-white/10 bg-[#09282d] text-white border-[1px] px-2 sm:px-4 py-[6px] sm:py-3">
             Coming soon...
           </span>
         </div>
