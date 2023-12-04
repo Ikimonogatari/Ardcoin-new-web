@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Script from "next/script";
+
 function calculateTime() {
   const year = new Date().getFullYear(),
     difference = +new Date(`${year}-12-15`) - +new Date();
@@ -128,16 +128,6 @@ export default function Home() {
   }, []);
   return (
     <main className="w-full h-screen relative flex justify-center items-center overflow-hidden">
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-HCR5VHKTTP " />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-HCR5VHKTTP ');
-        `}
-      </Script>
       <img
         className="absolute h-full w-full z-0 hidden sm:block"
         src="/bg.webp"
