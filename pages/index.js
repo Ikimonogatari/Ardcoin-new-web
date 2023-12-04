@@ -128,14 +128,14 @@ export default function Home() {
   }, []);
   return (
     <main className="w-full h-screen relative flex justify-center items-center overflow-hidden">
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-QG350EVRW2" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-HCR5VHKTTP " />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'G-QG350EVRW2');
+          gtag('config', 'G-HCR5VHKTTP ');
         `}
       </Script>
       <img
