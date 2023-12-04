@@ -127,7 +127,7 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="w-full h-screen relative flex justify-center items-center overflow-hidden">
+    <main className="w-full h-screen relative flex justify-center items-center">
       <img
         className="absolute h-full w-full z-0 hidden sm:block"
         src="/bg.webp"
