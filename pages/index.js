@@ -157,18 +157,21 @@ export default function Home() {
       {/* sm:hover:text-[80px] hover:text-[36px] */}
       <div className="flex flex-col text-3xl sm:text-7xl transition-all duration-500 items-center justify-center font-bold z-20">
         {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
-        <img
-          src="logowhite.png"
-          loading="lazy"
-          className="h-[30px] sm:h-[50px] lg:h-[60px]"
-        />
-        <div className="mt-20">
+        <div className="flex items-center gap-2">
+          <img
+            // src="logowhite.png"
+            src="/ardcoinlogo.svg"
+            loading="lazy"
+            className="h-[30px] sm:h-[50px] lg:h-[60px]"
+          />
+        </div>
+        <div className="mt-14">
           <iframe
             width="100%"
             src="https://www.youtube.com/embed/8GsVa3aBmiE?rel=0&autoplay=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="rounded-3xl mx-auto w-[354px] h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
+            className="rounded-2xl sm:rounded-3xl mx-auto w-[354px] h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
           ></iframe>
         </div>
         {timerComponents.length ? (
