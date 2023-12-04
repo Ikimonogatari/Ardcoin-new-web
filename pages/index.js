@@ -212,7 +212,7 @@ export default function Home() {
             <span>to Decentralized</span>
           </div>
         </div>
-        <div className="effect-text-container">
+        <div className="effect-text-container mt-4 sm:mt-8">
           <span className="text-xs sm:text-xl font-normal rounded-[4px] sm:rounded-lg border-white/10 bg-[#09282d] text-white border-[1px] px-2 sm:px-4 py-[6px] sm:py-3">
             Coming soon...
           </span>
