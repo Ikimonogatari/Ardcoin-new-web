@@ -138,11 +138,11 @@ export default function Home() {
       />
 
       <div className="absolute bg-[#051d20] z-10 w-full h-full opacity-90"></div>
-      <img
+      {/* <img
         src="logowhite.png"
         loading="lazy"
         className="absolute top-8 sm:top-[80px] h-[30px] sm:h-[50px] lg:h-[60px] z-50"
-      />
+      /> */}
       <img
         src="gradbg-min.png"
         loading="lazy"
@@ -157,15 +157,50 @@ export default function Home() {
       {/* sm:hover:text-[80px] hover:text-[36px] */}
       <div className="flex flex-col text-3xl sm:text-7xl transition-all duration-500 items-center justify-center font-bold z-20">
         {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
-        <div className="mt-5">
+        <img
+          src="logowhite.png"
+          loading="lazy"
+          className="h-[30px] sm:h-[50px] lg:h-[60px]"
+        />
+        <div className="mt-20">
           <iframe
             width="100%"
             src="https://www.youtube.com/embed/8GsVa3aBmiE?rel=0&autoplay=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="mx-auto w-[354px] h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
+            className="rounded-3xl mx-auto w-[354px] h-[200px] sm:w-[442px] sm:h-[250px] lg:w-[708px] lg:h-[400px]"
           ></iframe>
         </div>
+        {timerComponents.length ? (
+          <div className="mt-3 sm:mt-8 text-white font-normal grid grid-flow-col gap-2 sm:gap-4 text-center auto-cols-max rounded-[4px] sm:rounded-lg border-white/10 bg-[#09282d] border-[1px] px-2 sm:px-2 py-[6px] sm:py-2">
+            <div className="flex flex-col text-xs sm:text-base">
+              <span className="countdown text-3xl sm:text-4xl lg:text-5xl">
+                <span style={{ "--value": timeLeft["days"] }}></span>
+              </span>
+              days
+            </div>
+            <div className="flex flex-col text-xs sm:text-base">
+              <span className="countdown text-3xl sm:text-4xl lg:text-5xl">
+                <span style={{ "--value": timeLeft["hours"] }}></span>
+              </span>
+              hours
+            </div>
+            <div className="flex flex-col text-xs sm:text-base">
+              <span className="countdown text-3xl sm:text-4xl lg:text-5xl">
+                <span style={{ "--value": timeLeft["minutes"] }}></span>
+              </span>
+              min
+            </div>
+            <div className="flex flex-col text-xs sm:text-base">
+              <span className="countdown text-3xl sm:text-4xl lg:text-5xl">
+                <span style={{ "--value": timeLeft["seconds"] }}></span>
+              </span>
+              sec
+            </div>
+          </div>
+        ) : (
+          <></>
+        )}
         <div className="flex items-center text-center text-white mt-3 sm:mt-6 text-base sm:text-2xl font-normal">
           <div id="text" className="mr-2">
             Centralized
@@ -179,36 +214,6 @@ export default function Home() {
             Coming soon...
           </span>
         </div>
-        {timerComponents.length ? (
-          <div className="mt-3 sm:mt-8 text-white font-normal grid grid-flow-col gap-2 sm:gap-4 text-center auto-cols-max">
-            <div className="flex flex-col text-xs sm:text-base">
-              <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
-                <span style={{ "--value": timeLeft["days"] }}></span>
-              </span>
-              days
-            </div>
-            <div className="flex flex-col text-xs sm:text-base">
-              <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
-                <span style={{ "--value": timeLeft["hours"] }}></span>
-              </span>
-              hours
-            </div>
-            <div className="flex flex-col text-xs sm:text-base">
-              <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
-                <span style={{ "--value": timeLeft["minutes"] }}></span>
-              </span>
-              min
-            </div>
-            <div className="flex flex-col text-xs sm:text-base">
-              <span className="countdown text-3xl sm:text-4xl lg:text-6xl">
-                <span style={{ "--value": timeLeft["seconds"] }}></span>
-              </span>
-              sec
-            </div>
-          </div>
-        ) : (
-          <></>
-        )}
       </div>
     </main>
   );
