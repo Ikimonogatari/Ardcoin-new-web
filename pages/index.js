@@ -155,7 +155,7 @@ export default function Home() {
       />
       {/* <div className="absolute z-50 bottom-1/2 sm:bottom-24"></div> */}
       {/* sm:hover:text-[80px] hover:text-[36px] */}
-      <div className="flex flex-col text-3xl sm:text-7xl transition-all duration-500 items-center justify-center font-bold z-20">
+      <div className="flex flex-col transition-all duration-500 items-center justify-center font-bold z-20">
         {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
 
         <img
