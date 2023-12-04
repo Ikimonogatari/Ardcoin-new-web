@@ -157,14 +157,14 @@ export default function Home() {
       {/* sm:hover:text-[80px] hover:text-[36px] */}
       <div className="flex flex-col text-3xl sm:text-7xl transition-all duration-500 items-center justify-center font-bold z-20">
         {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
-        <div className="flex items-center gap-2">
-          <img
-            // src="logowhite.png"
-            src="/ardcoinlogo.svg"
-            loading="lazy"
-            className="h-[30px] sm:h-[50px] lg:h-[60px]"
-          />
-        </div>
+
+        <img
+          // src="logowhite.png"
+          src="/ardcoinlogo.svg"
+          loading="lazy"
+          className="absolute top-8 z-50 sm:static h-[30px] sm:h-[50px] lg:h-[60px]"
+        />
+
         <div className="mt-14">
           <iframe
             width="100%"
