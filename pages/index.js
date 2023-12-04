@@ -153,7 +153,7 @@ export default function Home() {
         loading="lazy"
         className="absolute bottom-0 w-full z-50 opacity-70 h-1/6 mx-auto block md:hidden object-cover transition-opacity duration-1000 ease-in-out"
       />
-      <div className="flex flex-col transition-all duration-500 items-center justify-center font-bold z-20 max-w-6xl max-h-[700px] container overflow-hidden">
+      <div className="flex flex-col transition-all duration-500 items-center justify-center font-bold z-20 max-w-6xl max-h-[750px] container overflow-hidden">
         {/* <span className="text-[#aaf082] ">Ardcoin 3.0</span> */}
 
         <img
