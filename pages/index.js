@@ -16,7 +16,11 @@ function calculateTime() {
 }
 
 export default function Home() {
-  const [timeLeft, setTimeLeft] = useState(calculateTime());
+  const [timeLeft, setTimeLeft] = useState("");
+  useEffect(() => {
+    setTimeLeft(calculateTime());
+  }, []);
+
   useEffect(() => {
     const id = setTimeout(() => {
       setTimeLeft(calculateTime());
