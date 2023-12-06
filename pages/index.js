@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function calculateTime() {
   const year = new Date().getFullYear(),
-    difference = +new Date(`${year}-12-14`) - +new Date();
+    difference = +new Date(`${year}-12-15`) - +new Date();
   let timeLeft = [];
 
   if (difference > 0) {
