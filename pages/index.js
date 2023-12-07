@@ -162,7 +162,7 @@ export default function Home() {
 
         <img
           // src="logowhite.png"
-          src="/ardcoinlogo.svg"
+          src="/logowhite.png"
           loading="lazy"
           className="absolute top-8 z-50 sm:static h-[30px] sm:h-[50px] lg:h-[60px]"
         />
